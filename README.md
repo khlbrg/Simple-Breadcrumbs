@@ -16,14 +16,14 @@ This is a package for Laravel 4.
     )
 
 
-*Add an item
+*Add an item*
 
     Breadcrumbs::addCrumb('Home', '/');
 
-* Enable divider
+*Enable divider*
 
     Breadcrumbs::enableDivider();
 
-* Set divider character
+*Set divider character*
 
     Breadcrumbs::setDivider('&rarr;');
