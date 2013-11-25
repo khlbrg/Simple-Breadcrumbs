@@ -1,0 +1,23 @@
+{
+    "name": "ekhaga/breadcrumbs",
+    "description": "This is a package that enables you to use breadcrumbs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Eriksson",
+            "email": "erikssonandreas@me.com"
+        }
+    ],
+    "homepage": "http://baronen.org",
+    "keywords": ["laravel", "breadcrumbs"],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ekhaga\\Breadcrumbs": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
