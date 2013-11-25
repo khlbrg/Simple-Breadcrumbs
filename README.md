@@ -9,6 +9,7 @@ Install by adding to yur composer.json
 
     "ekhaga/breadcrumbs": "dev-master"
 
+
     'providers' => array(
         ...,
         'Ekhaga\Breadcrumbs\BreadcrumbsServiceProvider'
