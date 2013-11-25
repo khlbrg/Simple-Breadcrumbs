@@ -1,9 +1,13 @@
-# Simple Breadcrumbs for Laravel 4
-================
+## Simple Breadcrumbs for Laravel 4
+
 
 This is a package for Laravel 4.
 
-##Add to your laravel project
+###Add to your laravel project
+
+Install by adding to yur composer.json
+
+    "ekhaga/breadcrumbs": "dev-master"
 
     'providers' => array(
         ...,
@@ -16,7 +20,7 @@ This is a package for Laravel 4.
     )
 
 
-*Add an item*
+**Add an item**
 
     Breadcrumbs::addCrumb('Home', '/');
 
