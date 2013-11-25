@@ -24,10 +24,24 @@ Install by adding to yur composer.json
 
     Breadcrumbs::addCrumb('Home', '/');
 
-*Enable divider*
+**Enable divider**
 
     Breadcrumbs::enableDivider();
 
-*Set divider character*
+**Set divider character**
 
     Breadcrumbs::setDivider('&rarr;');
+
+**Set a css class to the list**
+
+    Breadcrumbs::setCssClass('yourclass')
+
+**Render the crumbs**
+This will render the crumbs in a ul list if there is any crumbs
+
+    Breadcrumbs::render()
+
+**Get all crumbs**
+This function will return all breadcrumbs in an array
+
+    Breadcrumbs::getAllCrumbs()
