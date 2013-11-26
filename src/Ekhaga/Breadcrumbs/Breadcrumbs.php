@@ -5,14 +5,12 @@ class Breadcrumbs
 
 
     private $crumbs = [];
-    private $divider;
-    private $cssClass;
+    private $divider = "&rarr;";
+    private $cssClass = "breadcrumb";
     private $dividerEnabled = false;
 
     public function __construct()
     {
-        $this->setCssClass();
-        $this->setDivider();
     }
 
     /**
@@ -23,6 +21,15 @@ class Breadcrumbs
     public function addCrumb($text, $url)
     {
         $this->crumbs[] = array('text' => $text, 'url' => $url);
+    }
+
+    /**
+     * Returns all crumbs
+     * @return array
+     */
+    public function getAllCrumbs()
+    {
+        return $this->crumbs;
     }
 
     /**
@@ -46,19 +53,12 @@ class Breadcrumbs
      * Set which css class that should be added to the ul
      * @param string $class
      */
-    public function setCssClass($class = 'breadcrumb')
+    public function setCssClass($class)
     {
         $this->cssClass = $class;
     }
 
-    /**
-     * Returns all crumbs
-     * @return array
-     */
-    public function getAllCrumbs()
-    {
-        return $this->crumbs;
-    }
+
 
     /**
      * Render all the breadcrumbs including the divider if enabled
@@ -73,7 +73,12 @@ class Breadcrumbs
                 if (0 !== $key && $this->dividerEnabled)
                     echo "<li class='divider'>" . $this->divider . "</li>";
 
-                echo "<li><a href='" . $c['url'] . "'>" . $c['text'] . "</a></li>";
+                if(end($this->crumbs) == $c) {
+                    echo "<li class='active'>".$c['text'] . "</li>";
+                } else {
+                    echo "<li><a href='" . $c['url'] . "'>" . $c['text'] . "</a></li>";
+                }
+
 
             }
             echo "</ul>";
