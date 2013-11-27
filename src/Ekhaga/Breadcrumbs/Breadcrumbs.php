@@ -18,7 +18,7 @@ class Breadcrumbs
      * @param $text
      * @param $url
      */
-    public function addCrumb($text, $url)
+    public function addCrumb($text, $url = null)
     {
         $this->crumbs[] = array('text' => $text, 'url' => $url);
     }
