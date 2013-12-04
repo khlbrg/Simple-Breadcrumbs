@@ -46,3 +46,7 @@ This will render the crumbs in a ul list if there is any crumbs
 This function will return all breadcrumbs in an array
 
     Breadcrumbs::getAllCrumbs()
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/andene/simple-breadcrumbs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
