@@ -18,7 +18,7 @@ class Breadcrumbs
      * @param $text
      * @param $url
      */
-    public function addCrumb($text, $url)
+    public function addCrumb($text, $url = null)
     {
         $this->crumbs[] = array('text' => $text, 'url' => $url);
     }
@@ -65,7 +65,6 @@ class Breadcrumbs
      */
     public function render()
     {
-
         if (count($this->crumbs) > 0) :
             echo "<ul class='" . $this->cssClass . "'>";
 
@@ -78,8 +77,6 @@ class Breadcrumbs
                 } else {
                     echo "<li><a href='" . $c['url'] . "'>" . $c['text'] . "</a></li>";
                 }
-
-
             }
             echo "</ul>";
 
