@@ -1,4 +1,4 @@
-<?php namespace Ekhaga\Breadcrumbs;
+<?php namespace Oak\Breadcrumbs;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class BreadcrumbsServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('ekhaga/breadcrumbs');
+		$this->package('oak/breadcrumbs');
 	}
 
 	/**
