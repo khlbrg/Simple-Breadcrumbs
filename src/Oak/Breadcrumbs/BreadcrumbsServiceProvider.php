@@ -18,7 +18,7 @@ class BreadcrumbsServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('ekhaga/breadcrumbs');
+		$this->package('oak/breadcrumbs');
 	}
 
 	/**
