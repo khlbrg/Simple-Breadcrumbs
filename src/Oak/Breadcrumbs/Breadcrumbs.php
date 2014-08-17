@@ -2,8 +2,6 @@
 
 class Breadcrumbs
 {
-
-
     private $crumbs = [];
     private $divider = "&rarr;";
     private $cssClass = "breadcrumb";
