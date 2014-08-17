@@ -1,4 +1,4 @@
-<?php namespace Ekhaga\Breadcrumbs;
+<?php namespace Oak\Breadcrumbs;
 
 use Illuminate\Support\ServiceProvider;
 

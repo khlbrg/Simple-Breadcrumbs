@@ -1,4 +1,4 @@
-<?php namespace Ekhaga\Breadcrumbs\Facades;
+<?php namespace Oak\Breadcrumbs\Facades;
 
 use \Illuminate\Support\Facades\Facade;
 

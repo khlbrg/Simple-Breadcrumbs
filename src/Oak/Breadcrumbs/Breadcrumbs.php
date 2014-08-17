@@ -1,9 +1,7 @@
-<?php namespace Ekhaga\Breadcrumbs;
+<?php namespace Oak\Breadcrumbs;
 
 class Breadcrumbs
 {
-
-
     private $crumbs = [];
     private $divider = "&rarr;";
     private $cssClass = "breadcrumb";
