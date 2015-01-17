@@ -18,7 +18,6 @@ class BreadcrumbsServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('oak/breadcrumbs');
 	}
 
 	/**
