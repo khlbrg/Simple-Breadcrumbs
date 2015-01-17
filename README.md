@@ -12,18 +12,20 @@ Install by adding to yur composer.json
 
     'providers' => array(
         ...,
-        'Ekhaga\Breadcrumbs\BreadcrumbsServiceProvider'
+        'Oak\Breadcrumbs\BreadcrumbsServiceProvider',
     )
+
+    May skip this and just import/use it in the controller.
 
     'aliases' => array(
         ...,
-        'Breadcrumbs'     => 'Ekhaga\Breadcrumbs\Facades\Breadcrumbs'
+        'Breadcrumbs'     => 'Oak\Breadcrumbs\Facades\Breadcrumbs'
     )
 
 
 **Add an item**
 
-    Breadcrumbs::addCrumb('Home', '/');
+    Breadcrumbs::add('Home', '/');
 
 **Enable divider**
 
@@ -35,7 +37,7 @@ Install by adding to yur composer.json
 
 **Set a css class to the list**
 
-    Breadcrumbs::setCssClass('yourclass')
+    Breadcrumbs::cssClass('yourclass')
 
 **Render the crumbs**
 This will render the crumbs in a ul list if there is any crumbs
@@ -45,7 +47,7 @@ This will render the crumbs in a ul list if there is any crumbs
 **Get all crumbs**
 This function will return all breadcrumbs in an array
 
-    Breadcrumbs::getAllCrumbs()
+    Breadcrumbs::all()
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/andene/simple-breadcrumbs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
