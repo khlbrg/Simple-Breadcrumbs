@@ -16,7 +16,7 @@ class Breadcrumbs
      * @param $text
      * @param $url
      */
-    public function addCrumb($text, $url = null)
+    public function add($text, $url = null)
     {
         $this->crumbs[] = array('text' => $text, 'url' => $url);
     }
@@ -25,7 +25,7 @@ class Breadcrumbs
      * Returns all crumbs
      * @return array
      */
-    public function getAllCrumbs()
+    public function all()
     {
         return $this->crumbs;
     }
@@ -51,7 +51,7 @@ class Breadcrumbs
      * Set which css class that should be added to the ul
      * @param string $class
      */
-    public function setCssClass($class)
+    public function cssClass($class)
     {
         $this->cssClass = $class;
     }
